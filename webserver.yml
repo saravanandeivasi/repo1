@@ -14,11 +14,11 @@
       state: started 
      when: ansible_os_family == "Debian"
 
-    - name: Install webserver on Redhat
-      yum:
-       name: httpd
-       state: present
-      when: ansible_os_family =="Redhat"
+   - name: Install webserver on Redhat
+     yum:
+      name: httpd
+      state: present
+     when: ansible_os_family =="Redhat"
 
    - name: Start the web service on Redhat
      service:
