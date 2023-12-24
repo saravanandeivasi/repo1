@@ -10,4 +10,9 @@
    - name: Install tree
      apt:
       name: tree
-      state: present   
+      state: present  
+
+   - name: start the webserver
+     service:
+      name: apache2
+      state: started 
