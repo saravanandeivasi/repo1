@@ -1,4 +1,4 @@
 ---
 installubuntu: tree
 installredhat: httpd
-javainstall: kami911.java-open-jdk11
+javainstall: default-jre
