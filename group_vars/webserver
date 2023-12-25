@@ -1,2 +1,3 @@
-installubuntu= tree
-installredhat= httpd
+---
+installubuntu: tree
+installredhat: httpd
