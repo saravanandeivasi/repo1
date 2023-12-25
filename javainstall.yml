@@ -1,0 +1,9 @@
+---
+- hosts: webserver
+  become: yes
+  tasks:
+  - name: Install JAVA
+    apt:
+     name: "{{javainstall}}"
+     state: present
+    when: ansible_os_family =="Debian" 
