@@ -1,11 +1,11 @@
 ---
-- hosts: 
+- hosts: 172.31.6.83
   become: yes
   tasks:
   - name: Install Linux Commands
     command: hostname -f
     register: results
 
-  - name: Get the Results
+  - name: Get the Results for host
     debug:
      mag: "{{results}}"  
