@@ -1,2 +1,5 @@
 [webserver]
 172.31.44.53
+installubuntu= apache2
+installredhat= httpd
+
