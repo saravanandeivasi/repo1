@@ -1,0 +1,11 @@
+---
+- hosts: 
+  become: yes
+  tasks:
+  - name: Install Linux Commands
+    command: hostname -f
+    register: results
+
+  - name: Get the Results
+    debug:
+     mag: "{{results}}"  
