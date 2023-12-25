@@ -8,4 +8,4 @@
 
   - name: Get the Results for host
     debug:
-     mag: "{{results}}"  
+     msg: "{{results}}"  
